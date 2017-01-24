@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# if your ~/.pgpass file is configured with (right 0600) and :    hostname:port:databsae:username:password
+#                                                                 localhost:5432:databsae:username:password
+# you can remove : --password for no more password prompt
+if [ `whoami` != 'root' ];then echo "Sorry this script will only run as root" ; exit 1 ; fi
+
+DEFAULT_USER=$(cat ~/.pgpass | awk -F":" '{print $4}')
+DBNAME=$(cat ~/.pgpass | awk -F":" '{print $3}')
+PSQPSS=$(cat ~/.pgpass | awk -F":" '{print $5}')
+PGSQL=$(which psql)
+CREATEDBSQLFILE=$(readlink -m create_dlgsmitedb.sql)
+INJECTDATASQLFILE=$(readlink -m inject_data.sql)
+
+su - postgres -c "echo \"\\
+CREATE USER ${DEFAULT_USER};
+ALTER USER ${DEFAULT_USER} WITH PASSWORD '${PSQPSS}';
+CREATE DATABASE ${DBNAME};
+grant all privileges on database ${DBNAME} to ${DEFAULT_USER};
+ALTER DATABASE ${DBNAME} OWNER TO ${DEFAULT_USER};
+\\q
+\" | psql -d ${DBNAME}"
+
+su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${CREATEDBSQLFILE}"
+#su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
+
