@@ -1,136 +1,136 @@
 #A
-Agni		:Hindu		:Ranged	:Magical	:Mage
-Ah Muzen Cab	:Mayan		:Ranged	:Physical	:Hunter
-Ah Puch		:Mayan		:Ranged	:Magical	:Mage
-Amaterasu	:Japanese	:Melee	:Physical	:Warrior
-Anhur		:Egyptian	:Ranged	:Physical	:Hunter
-Anubis		:Egyptian	:Ranged	:Magical	:Mage
-Ao Kuang	:Chinese	:Melee	:Magical	:Mage
-Aphrodite	:Greek		:Ranged	:Magical	:Mage
-Apollo		:Greek		:Ranged	:Physical	:Hunter
-Arachne		:Greek		:Melee	:Physical	:Assassin
-Ares		:Greek		:Melee	:Magical	:Guardian
-Artemis		:Greek		:Ranged	:Physical	:Hunter
-Athena		:Greek		:Melee	:Magical	:Guardian
-Awilix		:Mayan		:Melee	:Physical	:Assassin
+Agni		:Hindu		:Ranged	:Mage
+Ah Muzen Cab	:Mayan		:Ranged	:Hunter
+Ah Puch		:Mayan		:Ranged	:Mage
+Amaterasu	:Japanese	:Melee	:Warrior
+Anhur		:Egyptian	:Ranged	:Hunter
+Anubis		:Egyptian	:Ranged	:Mage
+Ao Kuang	:Chinese	:Melee	:Mage
+Aphrodite	:Greek		:Ranged	:Mage
+Apollo		:Greek		:Ranged	:Hunter
+Arachne		:Greek		:Melee	:Assassin
+Ares		:Greek		:Melee	:Guardian
+Artemis		:Greek		:Ranged	:Hunter
+Athena		:Greek		:Melee	:Guardian
+Awilix		:Mayan		:Melee	:Assassin
 
 #B
-Bacchus		:Roman		:Melee	:Magical	:Guardian
-Bakasura	:Hindu		:Melee	:Physical	:Assassin
-Bastet		:Egyptian	:Melee	:Physical	:Assassin
-Bellona		:Roman		:Melee	:Physical	:Warrior
+Bacchus		:Roman		:Melee	:Guardian
+Bakasura	:Hindu		:Melee	:Assassin
+Bastet		:Egyptian	:Melee	:Assassin
+Bellona		:Roman		:Melee	:Warrior
 
 #C
-Cabrakan	:Mayan		:Melee	:Magical	:Guardian
-Camazotz	:Mayan		:Melee	:Physical	:Assassin
-Chaac		:Mayan		:Melee	:Physical	:Warrior
-Chang'e		:Chinese	:Ranged	:Magical	:Mage
-Chiron		:Greek		:Ranged	:Physical	:Hunter
-Chronos		:Greek		:Ranged	:Magical	:Mage
-Cupid		:Roman		:Ranged	:Physical	:Hunter
+Cabrakan	:Mayan		:Melee	:Guardian
+Camazotz	:Mayan		:Melee	:Assassin
+Chaac		:Mayan		:Melee	:Warrior
+Chang'e		:Chinese	:Ranged	:Mage
+Chiron		:Greek		:Ranged	:Hunter
+Chronos		:Greek		:Ranged	:Mage
+Cupid		:Roman		:Ranged	:Hunter
 
 #D
 
 #E
-Erlang Shen	:Chinese	:Melee	:Physical	:Warrior
+Erlang Shen	:Chinese	:Melee	:Warrior
 
 #F
-Fafnir		:Norse		:Melee	:Magical	:Guardian
-Fenrir		:Norse		:Melee	:Physical	:Assassin
-Freya		:Norse		:Ranged	:Magical	:Mage
+Fafnir		:Norse		:Melee	:Guardian
+Fenrir		:Norse		:Melee	:Assassin
+Freya		:Norse		:Ranged	:Mage
 
 #G
-Geb		:Egyptian	:Melee	:Magical	:Guardian
-Guan Yu		:Chinese	:Melee	:Physical	:Warrior
+Geb		:Egyptian	:Melee	:Guardian
+Guan Yu		:Chinese	:Melee	:Warrior
 
 #H
-Hades		:Greek		:Ranged	:Magical	:Mage
-He Bo		:Chinese	:Ranged	:Magical	:Mage
-Hel		:Norse		:Ranged	:Magical	:Mage
-Hercules	:Roman		:Melee	:Physical	:Warrior
-Hou Yi		:Chinese	:Ranged	:Physical	:Hunter
-Hun Batz	:Mayan		:Melee	:Physical	:Assassin
+Hades		:Greek		:Ranged	:Mage
+He Bo		:Chinese	:Ranged	:Mage
+Hel		:Norse		:Ranged	:Mage
+Hercules	:Roman		:Melee	:Warrior
+Hou Yi		:Chinese	:Ranged	:Hunter
+Hun Batz	:Mayan		:Melee	:Assassin
 
 #I
-Isis		:Egyptian	:Ranged	:Magical	:Mage
-Izanami		:Japanese	:Ranged	:Physical	:Hunter
+Isis		:Egyptian	:Ranged	:Mage
+Izanami		:Japanese	:Ranged	:Hunter
 
 #J
-Janus		:Roman		:Ranged	:Magical	:Mage
-Jing Wei	:Chinese	:Ranged	:Physical	:Hunter
+Janus		:Roman		:Ranged	:Mage
+Jing Wei	:Chinese	:Ranged	:Hunter
 
 #K
-Kali		:Hindu		:Melee	:Physical	:Assassin
-Khepri		:Egyptian	:Melee	:Magical	:Guardian
-Kukulkan	:Mayan		:Ranged	:Magical	:Mage
-Kumbhakarna	:Hindu		:Melee	:Magical	:Mage
+Kali		:Hindu		:Melee	:Assassin
+Khepri		:Egyptian	:Melee	:Guardian
+Kukulkan	:Mayan		:Ranged	:Mage
+Kumbhakarna	:Hindu		:Melee	:Mage
 
 #L
-Loki		:Norse		:Melee	:Physical	:Assassin
+Loki		:Norse		:Melee	:Assassin
 
 #M
-Medusa		:Greek		:Ranged	:Physical	:Hunter
-Mercury		:Roman		:Melee	:Physical	:Assassin
+Medusa		:Greek		:Ranged	:Hunter
+Mercury		:Roman		:Melee	:Assassin
 
 #N
-Ne Zha		:Chinese	:Melee	:Physical	:Assassin
-Neith		:Egyptian	:Ranged	:Physical	:Hunter
-Nemesis		:Greek		:Melee	:Physical	:Assassin
-Nike		:Greek		:Melee	:Physical	:Warrior
-Nox		:Roman		:Ranged	:Magical	:Mage
-Nu Wa		:Chinese	:Ranged	:Magical	:Mage
+Ne Zha		:Chinese	:Melee	:Assassin
+Neith		:Egyptian	:Ranged	:Hunter
+Nemesis		:Greek		:Melee	:Assassin
+Nike		:Greek		:Melee	:Warrior
+Nox		:Roman		:Ranged	:Mage
+Nu Wa		:Chinese	:Ranged	:Mage
 
 #O
-Odin		:Norse		:Melee	:Physical	:Warrior
-Osiris		:Egyptian	:Melee	:Physical	:Warrior
+Odin		:Norse		:Melee	:Warrior
+Osiris		:Egyptian	:Melee	:Warrior
 
 #P
-Poseidon	:Greek		:Ranged	:Magical	:Mage
+Poseidon	:Greek		:Ranged	:Mage
 
 #Q
 
 #R
-Ra		:Egyptian	:Ranged	:Magical	:Mage
-Raijin		:Japanese	:Ranged	:Magical	:Mage
-Rama		:Hindu		:Ranged	:Physical	:Hunter
-Ratatoskr	:Norse		:Melee	:Physical	:Assassin
-Ravana		:Hindu		:Melee	:Physical	:Warrior
+Ra		:Egyptian	:Ranged	:Mage
+Raijin		:Japanese	:Ranged	:Mage
+Rama		:Hindu		:Ranged	:Hunter
+Ratatoskr	:Norse		:Melee	:Assassin
+Ravana		:Hindu		:Melee	:Warrior
 
 #S
-Scylla		:Greek		:Ranged	:Magical	:Mage
-Serqet		:Egyptian	:Melee	:Physical	:Assassin
-Skadi		:Norse		:Ranged	:Physical	:Hunter
-Sobek		:Egyptian	:Melee	:Magical	:Guardian
-Sol		:Norse		:Ranged	:Magical	:Mage
-Sun Wukong	:Chinese	:Melee	:Physical	:Warrior
-Susano		:Japanese	:Melee	:Physical	:Assassin
-Sylvanus	:Roman		:Ranged	:Magical	:Guardian
+Scylla		:Greek		:Ranged	:Mage
+Serqet		:Egyptian	:Melee	:Assassin
+Skadi		:Norse		:Ranged	:Hunter
+Sobek		:Egyptian	:Melee	:Guardian
+Sol		:Norse		:Ranged	:Mage
+Sun Wukong	:Chinese	:Melee	:Warrior
+Susano		:Japanese	:Melee	:Assassin
+Sylvanus	:Roman		:Ranged	:Guardian
 
 #T
-Terra		:Roman		:Melee	:Magical	:Guardian
-Thanatos	:Greek		:Melee	:Physical	:Assassin
-The Morrigan	:Celtic		:Ranged	:Magical	:Mage
-Thor		:Norse		:Melee	:Physical	:Assassin
-Thoth		:Egyptian	:Ranged	:Magical	:Mage
-Tyr		:Norse		:Melee	:Physical	:Warrior
+Terra		:Roman		:Melee	:Guardian
+Thanatos	:Greek		:Melee	:Assassin
+The Morrigan	:Celtic		:Ranged	:Mage
+Thor		:Norse		:Melee	:Assassin
+Thoth		:Egyptian	:Ranged	:Mage
+Tyr		:Norse		:Melee	:Warrior
 
 #U
-Ullr		:Norse		:Ranged	:Physical	:Hunter
+Ullr		:Norse		:Ranged	:Hunter
 
 #V
-Vamana		:Hindu		:Melee	:Physical	:Warrior
-Vulcan		:Roman		:Ranged	:Magical	:Mage
+Vamana		:Hindu		:Melee	:Warrior
+Vulcan		:Roman		:Ranged	:Mage
 
 #W
 
 #X
-Xbalanque	:Mayan		:Ranged	:Physical	:Hunter
-Xing Tian	:Chinese	:Melee	:Magical	:Guardian
+Xbalanque	:Mayan		:Ranged	:Hunter
+Xing Tian	:Chinese	:Melee	:Guardian
 
 #Y
-Ymir		:Norse		:Melee	:Magical	:Guardian
+Ymir		:Norse		:Melee	:Guardian
 
 #Z
-Zeus		:Greek		:Ranged	:Magical	:Mage
-Zhong Kui	:Chines		:Ranged	:Magical	:Mage
+Zeus		:Greek		:Ranged	:Mage
+Zhong Kui	:Chines		:Ranged	:Mage
 

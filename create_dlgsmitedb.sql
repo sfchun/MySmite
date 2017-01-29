@@ -37,9 +37,10 @@ CREATE TABLE ITEMS
 CREATE TABLE GODS
 (
         god_name char(32) NOT NULL UNIQUE,
-        god_class_type char(32) NOT NULL,
-        god_attack_type char(32) NOT NULL,
         god_pantheon char(32) NOT NULL,
+        god_attack_type char(32) NOT NULL,
+        /* god_power_type char(32) NOT NULL, */ /* Defined in Table CLASSES @class_damage_type */
+        god_class_type char(32) NOT NULL,
 	PRIMARY KEY (god_name)
 ) WITHOUT OIDS;
 

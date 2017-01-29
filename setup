@@ -10,7 +10,12 @@ DBNAME=$(cat ~/.pgpass | awk -F":" '{print $3}')
 PSQPSS=$(cat ~/.pgpass | awk -F":" '{print $5}')
 PGSQL=$(which psql)
 CREATEDBSQLFILE=$(readlink -m create_dlgsmitedb.sql)
-INJECTDATASQLFILE=$(readlink -m inject_data.sql)
+INJECTDATASQLFILE="/tmp/inject_data_$$.sql"
+CLASSDATAFILE=$(readlink -m classes.data)
+RELICDATAFILE=$(readlink -m relics.data)
+CONSUMDATAFILE=$(readlink -m consumables.data)
+ITEMSDATAFILE=$(readlink -m items.data)
+GODSDATAFILE=$(readlink -m gods.data)
 
 su - postgres -c "echo \"\\
 CREATE USER ${DEFAULT_USER};
@@ -21,6 +26,70 @@ ALTER DATABASE ${DBNAME} OWNER TO ${DEFAULT_USER};
 \\q
 \" | psql -d ${DBNAME}"
 
+echo 'CREATE DATABASE TABLES'
 su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${CREATEDBSQLFILE}"
+
+
+# Generating INJECTDATASQLFILE for Table : CLASSES ( 2 col )
+:>"${INJECTDATASQLFILE}"
+SAVEIFS=$IFS ; IFS=':'
+	cat "${CLASSDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read class_name class_damage_type; do
+		class_name=$( echo "${class_name}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		class_damage_type=$( echo "${class_damage_type}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		echo "INSERT INTO CLASSES VALUES ('$class_name','$class_damage_type');" >> "${INJECTDATASQLFILE}"
+	done
+IFS=$SAVEIFS
+echo 'INJECT INTO CLASSES TABLE'
+su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
+
+# Generating INJECTDATASQLFILE for Table : RELICS ( 1 col )
+:>"${INJECTDATASQLFILE}"
+SAVEIFS=$IFS ; IFS=':'
+	cat "${RELICDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read relic_name; do
+		relic_name=$( echo "${relic_name}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		echo "INSERT INTO RELICS VALUES ('$relic_name');" >> "${INJECTDATASQLFILE}"
+	done
+IFS=$SAVEIFS
+echo 'INJECT INTO RELICS TABLE'
+su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
+
+# Generating INJECTDATASQLFILE for Table : CONSUMABLES ( 1 col )
+:>"${INJECTDATASQLFILE}"
+SAVEIFS=$IFS ; IFS=':'
+	cat "${CONSUMDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read consumable_name; do
+		consumable_name=$( echo "${consumable_name}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		echo "INSERT INTO CONSUMABLES VALUES ('$consumable_name');" >> "${INJECTDATASQLFILE}"
+	done
+IFS=$SAVEIFS
+echo 'INJECT INTO CONSUMABLES TABLE'
+su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
+
+# Generating INJECTDATASQLFILE for Table : ITEMS ( ? col )
+:>"${INJECTDATASQLFILE}"
+SAVEIFS=$IFS ; IFS=':'
+	cat "${ITEMSDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read item_name; do
+		item_name=$( echo "${item_name}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		echo "INSERT INTO ITEMS VALUES ('$item_name');" >> "${INJECTDATASQLFILE}"
+	done
+IFS=$SAVEIFS
+echo 'INJECT INTO ITEMS TABLE'
 #su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
 
+# Generating INJECTDATASQLFILE for Table : CLASSES ( 4 col )
+:>"${INJECTDATASQLFILE}"
+SAVEIFS=$IFS ; IFS=':'
+	cat "${GODSDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read god_name god_pantheon god_attack_type god_class_type; do
+		simplequote=\'  ; doublequote=\'\'
+		god_name=$( echo "${god_name}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		god_pantheon=$( echo "${god_pantheon}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		god_attack_type=$( echo "${god_attack_type}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		god_class_type=$( echo "${god_class_type}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		echo "INSERT INTO GODS VALUES ('$god_name','$god_pantheon','$god_attack_type','$god_class_type');" >> "${INJECTDATASQLFILE}"
+	done
+IFS=$SAVEIFS
+echo 'INJECT INTO GODS TABLE'
+# echo 'SELECT god_name FROM GODS;' >> "${INJECTDATASQLFILE}" # DEBUG
+su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
+
+
+rm -Rf "${INJECTDATASQLFILE}"
