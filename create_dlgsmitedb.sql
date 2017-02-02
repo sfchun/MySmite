@@ -45,7 +45,9 @@ CREATE TABLE CONSUMABLES
 CREATE TABLE ITEMS
 (
         item_name char(32) NOT NULL UNIQUE,
-	PRIMARY KEY (item_name)
+	item_starter char(3) NOT NULL,
+	item_level smallint NOT NULL,
+	item_parent_name char(32)
 ) WITHOUT OIDS;
 
 CREATE TABLE GODS
@@ -60,6 +62,13 @@ CREATE TABLE GODS
 
 
 /* Create foreign keys */
+ALTER TABLE ITEMS
+        ADD FOREIGN KEY (item_parent_name)
+        REFERENCES ITEMS (item_name)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+;
+
 ALTER TABLE ITEMSSUBCATEGORIES
         ADD FOREIGN KEY (item_bcategory)
         REFERENCES ITEMSBIGCATEGORIES (item_bcategory)
