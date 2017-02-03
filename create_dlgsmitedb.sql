@@ -33,6 +33,7 @@ CREATE TABLE CLASSES
 CREATE TABLE RELICS
 (
         relic_name char(32) NOT NULL UNIQUE,
+        relic_level smallint NOT NULL,
 	PRIMARY KEY (relic_name)
 ) WITHOUT OIDS;
 
@@ -57,6 +58,10 @@ CREATE TABLE GODS
         god_attack_type char(32) NOT NULL,
         /* god_power_type char(32) NOT NULL, */ /* Defined in Table CLASSES @class_damage_type */
         god_class_type char(32) NOT NULL,
+	god_ability_1 char(32) NOT NULL,
+	god_ability_2 char(32) NOT NULL,
+	god_ability_3 char(32) NOT NULL,
+	god_ability_4 char(32) NOT NULL, /* elite ability */
 	PRIMARY KEY (god_name)
 ) WITHOUT OIDS;
 

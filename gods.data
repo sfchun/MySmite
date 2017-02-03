@@ -1,136 +1,136 @@
 #A
-Agni		:Hindu		:Ranged	:Mage
-Ah Muzen Cab	:Mayan		:Ranged	:Hunter
-Ah Puch		:Mayan		:Ranged	:Mage
-Amaterasu	:Japanese	:Melee	:Warrior
-Anhur		:Egyptian	:Ranged	:Hunter
-Anubis		:Egyptian	:Ranged	:Mage
-Ao Kuang	:Chinese	:Melee	:Mage
-Aphrodite	:Greek		:Ranged	:Mage
-Apollo		:Greek		:Ranged	:Hunter
-Arachne		:Greek		:Melee	:Assassin
-Ares		:Greek		:Melee	:Guardian
-Artemis		:Greek		:Ranged	:Hunter
-Athena		:Greek		:Melee	:Guardian
-Awilix		:Mayan		:Melee	:Assassin
+Agni		:Hindu		:Ranged	:Mage		:Noxious Fumes			:Flame Wave			:Path Of Flames			:Rain Fire
+Ah Muzen Cab	:Mayan		:Ranged	:Hunter		:Hive				:Swarm				:Honey				:Stinger
+Ah Puch		:Mayan		:Ranged	:Mage		:Undead Surge			:Corpse Explosion		:Fleeting Breath		:Empty The Crypts
+Amaterasu	:Japanese	:Melee	:Warrior	:Divine Presence		:Heavenly Reflection		:Glorious Charge		:Dazzling Offensive
+Anhur		:Egyptian	:Ranged	:Hunter		:Shifting Sands			:Impale				:Disperse			:Desert Fury
+Anubis		:Egyptian	:Ranged	:Mage		:Plague Of Locusts		:Mummify			:Grasping Hands			:Death Gaze
+Ao Kuang	:Chinese	:Melee	:Mage		:Water Illusion			:Dragon Call			:Wild Storm			:King Of The Eastern Seas
+Aphrodite	:Greek		:Ranged	:Mage		:Kiss				:Back Off!			:Love Birds			:Undying Love
+Apollo		:Greek		:Ranged	:Hunter		:So Beautiful			:Serenade			:The Moves			:Across The Sky
+Arachne		:Greek		:Melee	:Assassin	:Venomous Bite			:Cocoon				:Web				:Night Crawler
+Ares		:Greek		:Melee	:Guardian	:Shackles			:Bolster Defenses		:Searing Flesh			:No Escape
+Artemis		:Greek		:Ranged	:Hunter		:Transgressor's Fate		:Vengeful Assault		:Supress The Insolent		:Calydonian Boar
+Athena		:Greek		:Melee	:Guardian	:Preemptive Strike		:Confound			:Shield Wall			:Defender Of Olympus
+Awilix		:Mayan		:Melee	:Assassin	:Summon Suku			:Feather Step			:Moonlight Charge		:Gravity Surge
 
 #B
-Bacchus		:Roman		:Melee	:Guardian
-Bakasura	:Hindu		:Melee	:Assassin
-Bastet		:Egyptian	:Melee	:Assassin
-Bellona		:Roman		:Melee	:Warrior
+Bacchus		:Roman		:Melee	:Guardian	:Chug				:Belly Flop			:Belch Of The Gods		:Intoxicate
+Bakasura	:Hindu		:Melee	:Assassin	:Take Down			:Eat Minion			:Butcher Blades			:Regurgitate
+Bastet		:Egyptian	:Melee	:Assassin	:Pounce				:Razor Whip			:Declaw				:Cat Call
+Bellona		:Roman		:Melee	:Warrior	:Shield Bash			:Bludgeon			:Scourge			:Eagle's Rally
 
 #C
-Cabrakan	:Mayan		:Melee	:Guardian
-Camazotz	:Mayan		:Melee	:Assassin
-Chaac		:Mayan		:Melee	:Warrior
-Chang'e		:Chinese	:Ranged	:Mage
-Chiron		:Greek		:Ranged	:Hunter
-Chronos		:Greek		:Ranged	:Mage
-Cupid		:Roman		:Ranged	:Hunter
+Cabrakan	:Mayan		:Melee	:Guardian	:Seismic Crush			:Refraction Shield		:Tremors			:Tectonic Shift
+Camazotz	:Mayan		:Melee	:Assassin	:Screech			:Vampire Bats			:Devour				:Bat Out Of Hell
+Chaac		:Mayan		:Melee	:Warrior	:Thunder Strike			:Torrent			:Rain Dance			:Storm Call
+Chang'e		:Chinese	:Ranged	:Mage		:Crescent Moon Dance		:Moonlit Waltz			:Moonflower Dance		:Waxing Moon
+Chiron		:Greek		:Ranged	:Hunter		:Training Exercise		:Masterful Shot			:Giddyup!			:Centaurus
+Chronos		:Greek		:Ranged	:Mage		:Time Rift			:Accelerate			:Stop Time			:Rewind
+Cupid		:Roman		:Ranged	:Hunter		:Heart Bomb			:Share The Love			:Flutter			:Fields Of Love
 
 #D
 
 #E
-Erlang Shen	:Chinese	:Melee	:Warrior
+Erlang Shen	:Chinese	:Melee	:Warrior	:Spot Weakness			:Pin				:72 Transformatio		:9 Turns Blessing
 
 #F
-Fafnir		:Norse		:Melee	:Guardian
-Fenrir		:Norse		:Melee	:Assassin
-Freya		:Norse		:Ranged	:Mage
+Fafnir		:Norse		:Melee	:Guardian	:Cursed Strength		:Coerce				:Underhanded Tactics		:Draconic Corruption
+Fenrir		:Norse		:Melee	:Assassin	:Unchained			:Seething Howl			:Brutalize			:Ragnarok
+Freya		:Norse		:Ranged	:Mage		:Irradiate			:Pulse				:Banish				:Valkyrie's Discretion
 
 #G
-Geb		:Egyptian	:Melee	:Guardian
-Guan Yu		:Chinese	:Melee	:Warrior
+Geb		:Egyptian	:Melee	:Guardian	:Roll Out			:Shock Wave			:Stone Shield			:Cataclysm
+Guan Yu		:Chinese	:Melee	:Warrior	:Conviction			:Warrior's Will			:Taolu Assault			:Cavalry Charge
 
 #H
-Hades		:Greek		:Ranged	:Mage
-He Bo		:Chinese	:Ranged	:Mage
-Hel		:Norse		:Ranged	:Mage
-Hercules	:Roman		:Melee	:Warrior
-Hou Yi		:Chinese	:Ranged	:Hunter
-Hun Batz	:Mayan		:Melee	:Assassin
+Hades		:Greek		:Ranged	:Mage		:Death From Below		:Shroud Of Darkness		:Devour Souls			:Pillar Of Agony
+He Bo		:Chinese	:Ranged	:Mage		:Water Cannon			:Atlas Of The Yellow River	:Waterspout			:Crushing Wave
+Hel		:Norse		:Ranged	:Mage		:Decay (Restoration)		:Hinder (Cleanse)		:Repulse (Inspire)		:Switch Stances (Light)
+Hercules	:Roman		:Melee	:Warrior	:Driving Strike			:Earthbreaker			:Mitigate Wounds		:Excavate
+Hou Yi		:Chinese	:Ranged	:Hunter		:Ricochet			:Mark Of The Golden Crow	:Divebomb			:Sunbreaker
+Hun Batz	:Mayan		:Melee	:Assassin	:Somersault			:Overhand Smash			:Sacred Monkey			:Fear No Evil
 
 #I
-Isis		:Egyptian	:Ranged	:Mage
-Izanami		:Japanese	:Ranged	:Hunter
+Isis		:Egyptian	:Ranged	:Mage		:Wing Gust			:Spirit Ball			:Dispel Magic			:Circle Of Protection
+Izanami		:Japanese	:Ranged	:Hunter		:Sickle Storm			:Spectral Projection		:Fade Away			:Dark Portal
 
 #J
-Janus		:Roman		:Ranged	:Mage
-Jing Wei	:Chinese	:Ranged	:Hunter
+Janus		:Roman		:Ranged	:Mage		:Portal				:Unstable Vortex		:Threshold			:Through Space And Time
+Jing Wei	:Chinese	:Ranged	:Hunter		:Persistent Gust		:Explosive Bolts		:Agility			:Air Strike
 
 #K
-Kali		:Hindu		:Melee	:Assassin
-Khepri		:Egyptian	:Melee	:Guardian
-Kukulkan	:Mayan		:Ranged	:Mage
-Kumbhakarna	:Hindu		:Melee	:Mage
+Kali		:Hindu		:Melee	:Assassin	:Nimble Strike			:Lash				:Incense			:Destruction
+Khepri		:Egyptian	:Melee	:Guardian	:Abduct				:Rising Dawn			:Solar Flare			:Scarab's Blessing
+Kukulkan	:Mayan		:Ranged	:Mage		:Zephyr				:Slipstream			:Whirlwind			:Spirit Of The Nine Winds
+Kumbhakarna	:Hindu		:Melee	:Mage		:Throw Back			:Groggy Strike			:Mighty Yawn			:Epic Uppercut
 
 #L
-Loki		:Norse		:Melee	:Assassin
+Loki		:Norse		:Melee	:Assassin	:Vanish				:Decoy				:Aimed Strike			:Assassinate
 
 #M
-Medusa		:Greek		:Ranged	:Hunter
-Mercury		:Roman		:Melee	:Assassin
+Medusa		:Greek		:Ranged	:Hunter		:Viper Shot			:Acid Spray			:Lacerate			:Petrify
+Mercury		:Roman		:Melee	:Assassin	:Made You Look			:Maximum Velocity		:Special Delivery		:Sonic Boom
 
 #N
-Ne Zha		:Chinese	:Melee	:Assassin
-Neith		:Egyptian	:Ranged	:Hunter
-Nemesis		:Greek		:Melee	:Assassin
-Nike		:Greek		:Melee	:Warrior
-Nox		:Roman		:Ranged	:Mage
-Nu Wa		:Chinese	:Ranged	:Mage
+Ne Zha		:Chinese	:Melee	:Assassin	:Universe Ring Toss		:Flaming Spear			:Armillary Sash			:Wind Fire Wheels
+Neith		:Egyptian	:Ranged	:Hunter		:Spirit Arrow			:Unravel			:Back Flip			:World Weaver
+Nemesis		:Greek		:Melee	:Assassin	:Swift Vengeance		:Slice And Dice			:Retribution			:Divine Judgement
+Nike		:Greek		:Melee	:Warrior	:Rend				:Plan Of Action			:Valiant Leap			:Sentinel Of Zeus
+Nox		:Roman		:Ranged	:Mage		:Shadow Lock			:Siphon Darkness		:Shadow Step			:Night Terror
+Nu Wa		:Chinese	:Ranged	:Mage		:Mysterious Fog			:Clay Soldiers			:Shining Metal			:Fire Shards
 
 #O
-Odin		:Norse		:Melee	:Warrior
-Osiris		:Egyptian	:Melee	:Warrior
+Odin		:Norse		:Melee	:Warrior	:Lunge				:Raven Shout			:Gungnir's Might		:Ring Of Spears
+Osiris		:Egyptian	:Melee	:Warrior	:Sickle Strike			:Spirit Flail			:Judgement Tether		:Lord Of The Afterlife
 
 #P
-Poseidon	:Greek		:Ranged	:Mage
+Poseidon	:Greek		:Ranged	:Mage		:Tidal Surge			:Trident			:Whirlpool			:Release The Kraken!
 
 #Q
 
 #R
-Ra		:Egyptian	:Ranged	:Mage
-Raijin		:Japanese	:Ranged	:Mage
-Rama		:Hindu		:Ranged	:Hunter
-Ratatoskr	:Norse		:Melee	:Assassin
-Ravana		:Hindu		:Melee	:Warrior
+Ra		:Egyptian	:Ranged	:Mage		:Celestial Beam			:Divine Light			:Solar Blessing			:Searing Pain
+Raijin		:Japanese	:Ranged	:Mage		:Percussive Storm		:Raiju				:Thunder Crash			:Taiko Drums
+Rama		:Hindu		:Ranged	:Hunter		:Astral Strike			:Pick Me Up			:Rolling Assault		:Astral Barrage
+Ratatoskr	:Norse		:Melee	:Assassin	:Dart				:Flurry				:Acorn Blast			:Through The Cosmos
+Ravana		:Hindu		:Melee	:Warrior	:Prana Onslaught		:Overhead Kick			:10-Hand Shadow Fist		:Mystic Rush
 
 #S
-Scylla		:Greek		:Ranged	:Mage
-Serqet		:Egyptian	:Melee	:Assassin
-Skadi		:Norse		:Ranged	:Hunter
-Sobek		:Egyptian	:Melee	:Guardian
-Sol		:Norse		:Ranged	:Mage
-Sun Wukong	:Chinese	:Melee	:Warrior
-Susano		:Japanese	:Melee	:Assassin
-Sylvanus	:Roman		:Ranged	:Guardian
+Scylla		:Greek		:Ranged	:Mage		:Sic 'Em			:Crush				:Sentinel			:I'm A Monster
+Serqet		:Egyptian	:Melee	:Assassin	:Deathbane			:Cobra's Kiss			:Ambush				:Last Breath
+Skadi		:Norse		:Ranged	:Hunter		:Piercing Cold			:Rune Of The Hunt		:Permafrost			:Winter's Grasp
+Sobek		:Egyptian	:Melee	:Guardian	:Charge Prey			:Tail Whip			:Sickening Strike		:Lurking In The Waters
+Sol		:Norse		:Ranged	:Mage		:Radiance			:Stellar Burst			:Disapparate			:Supernova
+Sun Wukong	:Chinese	:Melee	:Warrior	:The Magic Cudgel		:Master's Will			:72 Transformatio		:Somersault Cloud
+Susano		:Japanese	:Melee	:Assassin	:Storm Kata			:Wind Siphon			:Jet Stream			:Typhoon
+Sylvanus	:Roman		:Ranged	:Guardian	:Verdant Growth			:Wisp				:Nature's Grasp			:Wrath Of Terra
 
 #T
-Terra		:Roman		:Melee	:Guardian
-Thanatos	:Greek		:Melee	:Assassin
-The Morrigan	:Celtic		:Ranged	:Mage
-Thor		:Norse		:Melee	:Assassin
-Thoth		:Egyptian	:Ranged	:Mage
-Tyr		:Norse		:Melee	:Warrior
+Terra		:Roman		:Melee	:Guardian	:Force Of Nature		:Crushing Earth			:Monolith			:Terra's Blessing
+Thanatos	:Greek		:Melee	:Assassin	:Death Scythe			:Scent Of Death			:Soul Reap			:Hovering Death
+The Morrigan	:Celtic		:Ranged	:Mage		:Deadly Aspects			:Dark Omen			:Confusion			:Changelling
+Thor		:Norse		:Melee	:Assassin	:Mjolnir's Attunement		:Tectonic Rift			:Berserker Barrage		:Anvil Of Dawn
+Thoth		:Egyptian	:Ranged	:Mage		:Hieroglyphic Assault		:Evade And Punish		:Glyph Of Pain			:Final Judgement
+Tyr		:Norse		:Melee	:Warrior	:Fearless			:Power Cleave			:Change Stance			:Lawbringer
 
 #U
-Ullr		:Norse		:Ranged	:Hunter
+Ullr		:Norse		:Ranged	:Hunter		:Bladed Arrow (Thrown Axe)	:Expose Weakness		:Hail Of Arrows (Glory Bound)	:Wield Axes (Wield Bow)
 
 #V
-Vamana		:Hindu		:Melee	:Warrior
-Vulcan		:Roman		:Ranged	:Mage
+Vamana		:Hindu		:Melee	:Warrior	:Clear The Path			:Armored Umbrella		:Umbrellarang			:Colossal Fury
+Vulcan		:Roman		:Ranged	:Mage		:Backfire			:Inferno Cannon			:Magma Bomb			:Earthshaker
 
 #W
 
 #X
-Xbalanque	:Mayan		:Ranged	:Hunter
-Xing Tian	:Chinese	:Melee	:Guardian
+Xbalanque	:Mayan		:Ranged	:Hunter		:Branching Bola			:Poison Darts			:Rising Jaguar			:Darkest Of Nights
+Xing Tian	:Chinese	:Melee	:Guardian	:Furious Roar			:Hook Slam			:Sky-Cutting Axe		:Whirlwind Of Rage And Steel
 
 #Y
-Ymir		:Norse		:Melee	:Guardian
+Ymir		:Norse		:Melee	:Guardian	:Ice Wall			:Glacial Strike			:Frost Breath			:Shards Of Ice
 
 #Z
-Zeus		:Greek		:Ranged	:Mage
-Zhong Kui	:Chines		:Ranged	:Mage
+Zeus		:Greek		:Ranged	:Mage		:Chain Lightning		:Aegis Assault			:Detonate Charge		:Lightning Storm
+Zhong Kui	:Chines		:Ranged	:Mage		:Expose Evil			:Exorcism			:Book Of Demons			:Recall Demons
 

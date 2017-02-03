@@ -44,12 +44,13 @@ IFS=$SAVEIFS
 echo 'INJECT INTO CLASSES TABLE'
 su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
 
-# Generating INJECTDATASQLFILE for Table : RELICS ( 1 col )
+# Generating INJECTDATASQLFILE for Table : RELICS ( 2 col )
 :>"${INJECTDATASQLFILE}"
 SAVEIFS=$IFS ; IFS=':'
-	cat "${RELICDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read relic_name; do
+	cat "${RELICDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read relic_name relic_level; do
 		relic_name=$( echo "${relic_name}" | sed 's/^[ \t]*//;s/[ \t]*$//')
-		echo "INSERT INTO RELICS VALUES ('$relic_name');" >> "${INJECTDATASQLFILE}"
+		relic_level=$( echo "${relic_level}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		echo "INSERT INTO RELICS VALUES ('$relic_name','$relic_level');" >> "${INJECTDATASQLFILE}"
 	done
 IFS=$SAVEIFS
 echo 'INJECT INTO RELICS TABLE'
@@ -100,16 +101,20 @@ IFS=$SAVEIFS
 echo 'INJECT INTO ITEMS TABLE'
 #su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
 
-# Generating INJECTDATASQLFILE for Table : CLASSES ( 4 col )
+# Generating INJECTDATASQLFILE for Table : GODS ( 8 col )
 :>"${INJECTDATASQLFILE}"
 SAVEIFS=$IFS ; IFS=':'
-	cat "${GODSDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read god_name god_pantheon god_attack_type god_class_type; do
+	cat "${GODSDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read god_name god_pantheon god_attack_type god_class_type god_ability_1 god_ability_2 god_ability_3 god_ability_4; do
 		simplequote=\'  ; doublequote=\'\'
 		god_name=$( echo "${god_name}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
 		god_pantheon=$( echo "${god_pantheon}" | sed 's/^[ \t]*//;s/[ \t]*$//')
 		god_attack_type=$( echo "${god_attack_type}" | sed 's/^[ \t]*//;s/[ \t]*$//')
 		god_class_type=$( echo "${god_class_type}" | sed 's/^[ \t]*//;s/[ \t]*$//')
-		echo "INSERT INTO GODS VALUES ('$god_name','$god_pantheon','$god_attack_type','$god_class_type');" >> "${INJECTDATASQLFILE}"
+		god_ability_1=$( echo "${god_ability_1}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		god_ability_2=$( echo "${god_ability_2}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		god_ability_3=$( echo "${god_ability_3}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		god_ability_4=$( echo "${god_ability_4}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		echo "INSERT INTO GODS VALUES ('$god_name','$god_pantheon','$god_attack_type','$god_class_type','$god_ability_1','$god_ability_2','$god_ability_3','$god_ability_4');" >> "${INJECTDATASQLFILE}"
 	done
 IFS=$SAVEIFS
 echo 'INJECT INTO GODS TABLE'
