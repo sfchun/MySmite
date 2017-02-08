@@ -48,7 +48,19 @@ CREATE TABLE ITEMS
         item_name char(32) NOT NULL UNIQUE,
 	item_starter char(3) NOT NULL,
 	item_level smallint NOT NULL,
-	item_parent_name char(32)
+	item_parent_name char(32),
+	item_stat_1 char(32) NOT NULL,
+	item_stat_1_value smallint NOT NULL,
+	item_stat_2 char(32),
+	item_stat_2_value smallint,
+	item_stat_3 char(32),
+	item_stat_3_value smallint,
+	item_stat_4 char(32),
+	item_stat_4_value smallint,
+	item_passif char(256),
+	item_passif_subcat char(32),
+	item_passif_subcat_2 char(32),
+	item_passif_subcat_3 char(32)
 ) WITHOUT OIDS;
 
 CREATE TABLE GODS
@@ -70,6 +82,36 @@ CREATE TABLE GODS
 ALTER TABLE ITEMS
         ADD FOREIGN KEY (item_parent_name)
         REFERENCES ITEMS (item_name)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+;
+ALTER TABLE ITEMS
+        ADD FOREIGN KEY (item_stat_1)
+        REFERENCES ITEMSSUBCATEGORIES (item_scategory)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+;
+ALTER TABLE ITEMS
+        ADD FOREIGN KEY (item_stat_2)
+        REFERENCES ITEMSSUBCATEGORIES (item_scategory)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+;
+ALTER TABLE ITEMS
+        ADD FOREIGN KEY (item_stat_3)
+        REFERENCES ITEMSSUBCATEGORIES (item_scategory)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+;
+ALTER TABLE ITEMS
+        ADD FOREIGN KEY (item_stat_4)
+        REFERENCES ITEMSSUBCATEGORIES (item_scategory)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+;
+ALTER TABLE ITEMS
+        ADD FOREIGN KEY (item_passif_subcat)
+        REFERENCES ITEMSSUBCATEGORIES (item_scategory)
         ON UPDATE CASCADE
         ON DELETE CASCADE
 ;

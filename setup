@@ -90,16 +90,33 @@ IFS=$SAVEIFS
 echo 'INJECT INTO ITEMSSUBCATEGORIES TABLE'
 su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
 
-# Generating INJECTDATASQLFILE for Table : ITEMS ( ? col )
+# Generating INJECTDATASQLFILE for Table : ITEMS ( 16 col )
 :>"${INJECTDATASQLFILE}"
 SAVEIFS=$IFS ; IFS=':'
-	cat "${ITEMSDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read item_name; do
-		item_name=$( echo "${item_name}" | sed 's/^[ \t]*//;s/[ \t]*$//')
-		echo "INSERT INTO ITEMS VALUES ('$item_name');" >> "${INJECTDATASQLFILE}"
+	cat "${ITEMSDATAFILE}" | grep -Ev "^[[:space:]]*$|^#" | while read item_name item_starter item_level item_parent_name item_stat_1 item_stat_1_value item_stat_2 item_stat_2_value item_stat_3 item_stat_3_value item_stat_4 item_stat_4_value item_passif item_passif_subcat_1 item_passif_subcat_2 item_passif_subcat_3; do
+		simplequote=\'  ; doublequote=\'\'
+		item_name=$( echo "${item_name}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		item_starter=$( echo "${item_starter}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_level=$( echo "${item_level}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_parent_name=$( echo "${item_parent_name}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		item_stat_1=$( echo "${item_stat_1}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_stat_1_value=$( echo "${item_stat_1_value}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_stat_2=$( echo "${item_stat_2}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_stat_2_value=$( echo "${item_stat_2_value}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_stat_3=$( echo "${item_stat_3}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_stat_3_value=$( echo "${item_stat_3_value}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_stat_4=$( echo "${item_stat_4}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_stat_4_value=$( echo "${item_stat_4_value}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_passif=$( echo "${item_passif}" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed "s/$simplequote/$doublequote/")
+		item_passif_subcat_1=$( echo "${item_passif_subcat_1}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_passif_subcat_2=$( echo "${item_passif_subcat_2}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		item_passif_subcat_3=$( echo "${item_passif_subcat_3}" | sed 's/^[ \t]*//;s/[ \t]*$//')
+		echo "INSERT INTO ITEMS VALUES ('$item_name','$item_starter','$item_level','$item_parent_name','$item_stat_1','$item_stat_1_value','$item_stat_2','$item_stat_2_value','$item_stat_3','$item_stat_3_value','$item_stat_4','$item_stat_4_value','$item_passif','$item_passif_subcat_1','$item_passif_subcat_2','$item_passif_subcat_3');" >> "${INJECTDATASQLFILE}"
 	done
 IFS=$SAVEIFS
 echo 'INJECT INTO ITEMS TABLE'
-#su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
+su - ${DEFAULT_USER} -c "$PGSQL -U ${DEFAULT_USER} -d ${DBNAME} -f ${INJECTDATASQLFILE}"
+
 
 # Generating INJECTDATASQLFILE for Table : GODS ( 8 col )
 :>"${INJECTDATASQLFILE}"
